@@ -13,26 +13,56 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
-            border:  1px solid black;
+            border:  1px solid rgb(170, 170, 170);
             padding: 10px;
+        }
+
+        tbody > tr:hover, tbody > tr:nth-child(even):hover{
+            background-color: rgb(230, 230, 230);
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(235, 235, 235);
+            /*even= par
+            odd= impar*/
         }
 
         thead, tfoot{
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>Populacao das Unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>Populacao</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width:50px;">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -48,11 +78,143 @@
                 <td>Rio de Janeiro</td>
                 <td> 17 264 943</td>
             </tr>
-
+            <tr>
+                <td>Alagoas</td>
+                <td>18 574 906</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>54 938 038</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>57 930 038</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>45 930 596</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>53 384 743</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>18 574 906</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>54 938 038</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>57 930 038</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>45 930 596</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>53 384 743</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>18 574 906</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>54 938 038</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>57 930 038</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>45 930 596</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>53 384 743</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>18 574 906</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>54 938 038</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>57 930 038</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>45 930 596</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>53 384 743</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>1</td>
+            </tr>
+            
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>0000</td>
             </tr>
         </tfoot>
